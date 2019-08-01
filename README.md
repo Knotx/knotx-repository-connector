@@ -1,4 +1,7 @@
 [![Build Status](https://dev.azure.com/knotx/Knotx/_apis/build/status/Knotx.knotx-repository-connector?branchName=master)](https://dev.azure.com/knotx/Knotx/_build/latest?definitionId=9&branchName=master)
+[![CodeFactor](https://www.codefactor.io/repository/github/knotx/knotx-repository-connector/badge)](https://www.codefactor.io/repository/github/knotx/knotx-repository-connector)
+[![codecov](https://codecov.io/gh/Knotx/knotx-repository-connector/branch/master/graph/badge.svg)](https://codecov.io/gh/Knotx/knotx-repository-connector)
+
 
 # Repository Connector
 Repository Connector is a [**Handler**](https://github.com/Knotx/knotx-server-http/tree/master/api#routing-handlers)
