@@ -23,9 +23,8 @@ plugins {
 subprojects {
     group = "io.knotx"
     repositories {
-        jcenter()
         mavenLocal()
-        maven { url = uri("https://plugins.gradle.org/m2/") }
-        maven { url = uri("https://oss.sonatype.org/content/groups/staging/") }
+        jcenter()
+        gradlePluginPortal()
     }
 }
