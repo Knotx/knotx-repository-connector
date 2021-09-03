@@ -19,7 +19,7 @@ import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
 import static com.github.tomakehurst.wiremock.client.WireMock.get;
 import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options;
-import static junit.framework.TestCase.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.mockito.Mockito.when;
@@ -37,6 +37,7 @@ import io.vertx.junit5.VertxTestContext;
 import io.vertx.reactivex.core.MultiMap;
 import io.vertx.reactivex.core.Vertx;
 import java.util.Arrays;
+import java.util.Collections;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -267,7 +268,7 @@ class HttpRepositoryConnectorTest {
         when(clientRequest.getHeaders()).thenReturn(MultiMap.caseInsensitiveMultiMap());
         when(clientRequest.getParams()).thenReturn(MultiMap.caseInsensitiveMultiMap()
                 .add("pets[]", Arrays.<String>asList("dog", "cat"))
-                .add("id", Arrays.<String>asList("someID")));
+                .add("id", Collections.<String>singletonList("someID")));
 
         wireMockServer.stubFor(get(urlEqualTo(requestPath + "?pets%5B%5D=dog&pets%5B%5D=cat&id=someID"))
                 .willReturn(aResponse()
