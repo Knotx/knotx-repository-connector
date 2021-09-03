@@ -44,7 +44,7 @@ dependencies {
   testImplementation("io.knotx:knotx-junit5:${project.version}")
   testImplementation(group = "org.mockito", name = "mockito-core")
   testImplementation(group = "org.mockito", name = "mockito-junit-jupiter")
-  testImplementation(group = "com.github.tomakehurst", name = "wiremock")
+  testImplementation(group = "com.github.tomakehurst", name = "wiremock-jre8")
 }
 
 tasks.getByName("sourcesJar").dependsOn("compileJava")
