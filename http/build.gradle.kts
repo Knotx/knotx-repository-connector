@@ -47,12 +47,7 @@ dependencies {
   testImplementation(group = "com.github.tomakehurst", name = "wiremock")
 }
 
-tasks {
-  named<RatTask>("rat") {
-    excludes.addAll(listOf("**/*.json", "*.md", "**/*.templ", "**/*.adoc", "**/build/*", "**/out/*", "**/generated/*", "/src/test/resources/*", "*.iml", "gradle.properties"))
-  }
-  getByName("build").dependsOn("rat")
-}
+tasks.getByName("sourcesJar").dependsOn("compileJava")
 
 publishing {
   publications {
