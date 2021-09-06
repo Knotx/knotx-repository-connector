@@ -4,6 +4,8 @@ All notable changes to `knotx-repository-connector` will be documented in this f
 ## Unreleased
 List of changes that are finished but not yet released in any final version.
                 
+## 2.3.1
+                
 ## 2.3.0
                 
 ## 2.2.1
