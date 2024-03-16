@@ -3,6 +3,8 @@ All notable changes to `knotx-repository-connector` will be documented in this f
 
 ## Unreleased
 List of changes that are finished but not yet released in any final version.
+                
+## 2.4.0
 - [PR](https://github.com/Knotx/knotx-repository-connector/pull/41) Upgrade Gradle to 7.6.3, Wiremock.
 
 ## 2.3.1
